@@ -13,18 +13,18 @@ Also, install the libraries that are in the import lines in the 'pio.py' file.
 
 To use the class and pull a report right away you would do the following: 
 
-  ReportOne = PioReportPull(yourusername, password, name of report as seen in pio*) 
+   - ReportOne = PioReportPull(yourusername, password, name of report as seen in pio*) 
 
-  *Make sure that this is the only report that has that name. 
+  - *Make sure that this is the only report that has that name. 
 
 So, in practice, it would look like: 
 
-  ReportOne = PioReportPull('xxxx', 'xxxx','Daily_Analytics') 
+  - ReportOne = PioReportPull('xxxx', 'xxxx','Daily_Analytics') 
   
 To access the report use: 
 
-  PioReportPull.get_report_path() 
-  Note: This is assuming that nothing else is being downloaded at the same time.
+  -PioReportPull.get_report_path() 
+  -Note: This is assuming that nothing else is being downloaded at the same time.
         The call brings back the complete path from the last downloaded file. 
  
 Voila!
