@@ -3,7 +3,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 import time
 import glob
- import os
+import os
 
 class PioReportPull:
 
@@ -22,6 +22,9 @@ class PioReportPull:
                              'div[1]/div/div/div[1]/span[1]/div[2]/input'
         download_button_xpath = '/html/body/div[4]/div[2]/div/div/div/div[2]' \
                                 '/div/ul/div/div/li[2]/div/div[1]/a/i'
+        #download_button_xpath is currently set to the second option that appears
+        #after you search for a term. You should update this xpath to meet your needs.
+        #I recommend directing it to the first option that is returned from the search.
         self.login(driver, self._login, self._password, login_url, email_xpath,
                    password_xpath)
         time.sleep(1)
