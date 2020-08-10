@@ -55,7 +55,7 @@ class PioReportPull:
 
     def report_path(self):
         time.sleep(10)
-        file_path = glob.glob(r'C:\Users\PremionOps\Downloads\*')
+        file_path = glob.glob(#path) #insert the path to the downloads file on your computer
          latest_file = max(file_path, key=os.path.getmtime) 
         return latest_file
 
