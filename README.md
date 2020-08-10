@@ -23,8 +23,8 @@ So, in practice, it would look like:
   
 To access the report use: 
 
-  -PioReportPull.get_report_path() 
-  -Note: This is assuming that nothing else is being downloaded at the same time.
+  - PioReportPull.get_report_path() 
+  - Note: This is assuming that nothing else is being downloaded at the same time.
         The call brings back the complete path from the last downloaded file. 
  
 Voila!
